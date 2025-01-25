@@ -1,4 +1,6 @@
 import About from "@/components/About";
+import Experience from "@/components/Experience";
+import Footer from "@/components/Footer";
 import Hero from "@/components/ui/Hero";
 import { Myprojects } from "@/components/ui/Projects";
 
@@ -10,10 +12,17 @@ export default function Home() {
       <About />
       <div className="pt-10">
           <div className="max-w-9xl w-full text-4xl text-white font-bold">
+            My Work Experience
+        </div>
+      </div>
+      <Experience />
+      <div className="pt-10">
+          <div className="max-w-9xl w-full text-4xl text-white font-bold">
             My Projects
         </div>
       </div>
       <Myprojects />
+      <Footer />
     </main>
   );
 }
