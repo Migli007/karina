@@ -32,7 +32,7 @@ export function Certs() {
 
 
   return (
-    <>
+    <div id="certs">
       <AnimatePresence>
         {active && typeof active === "object" && (
           <motion.div
@@ -156,7 +156,7 @@ export function Certs() {
           </motion.div>
         ))}
       </ul>
-    </>
+    </div>
   );
 }
 
