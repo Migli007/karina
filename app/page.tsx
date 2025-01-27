@@ -2,6 +2,7 @@ import About from "@/components/About";
 import { Certs } from "@/components/Certs";
 import Experience from "@/components/Experience";
 import Footer from "@/components/Footer";
+import { Analytics } from "@vercel/analytics/react"
 
 import { Myprojects } from "@/components/Projects";
 import { FloatingNav } from "@/components/ui/floating-navbar";
@@ -17,9 +18,10 @@ import {
 
 export default function Home() {
   return (
-    
+   
     <main className=" pb-10 relative flex justify-center flex-col overflow-hidden mx-auto sm:px-10 bg-slate-900">
       <div className="mx-10"></div>
+      <Analytics />
       <FloatingNav navItems={[
           {name: 'About Me',link:'#About', icon: <IconUserFilled />},
           {name: 'Certifications',link:'#certs', icon: <IconBookFilled />},
