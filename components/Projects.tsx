@@ -36,10 +36,10 @@ export const projects = [
     description: "Spearheaded the development of a robust production tracking system for Al Di Foods",
     chips: ["Django", "Python","PostgreSQL"],
   },
-  {
-    title: "Microsoft",
-    description:
-      "A multinational technology company that develops, manufactures, licenses, supports, and sells computer software, consumer electronics, personal computers, and related services.",
-    link: "https://microsoft.com",
-  },
+  // {
+  //   title: "Microsoft",
+  //   description:
+  //     "A multinational technology company that develops, manufactures, licenses, supports, and sells computer software, consumer electronics, personal computers, and related services.",
+  //   link: "https://microsoft.com",
+  // },
 ];

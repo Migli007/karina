@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import React, { useEffect, useId, useRef, useState,RefObject } from "react";
+import React, { useEffect, useId, useRef, useState, RefObject } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { useOutsideClick } from "@/hooks/use-outsideClick";
 
@@ -14,7 +14,7 @@ export function Certs() {
   useEffect(() => {
     function onKeyDown(event: KeyboardEvent) {
       if (event.key === "Escape") {
-        setActive(false);
+        setActive(null);
       }
     }
 
@@ -30,7 +30,6 @@ export function Certs() {
 
   useOutsideClick(ref as RefObject<HTMLDivElement>, () => setActive(null));
 
-
   return (
     <div id="certs">
       <AnimatePresence>
@@ -40,6 +39,7 @@ export function Certs() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             className="fixed inset-0 bg-black/20 h-full w-full z-10"
+            onClick={() => setActive(null)} // Close card when overlay is clicked
           />
         )}
       </AnimatePresence>
@@ -49,8 +49,16 @@ export function Certs() {
             <motion.div
               layoutId={`card-${active.title}-${id}`}
               ref={ref}
-              className="w-full max-w-[500px] h-full md:h-fit md:max-h-[90%] flex flex-col bg-white dark:bg-neutral-900 sm:rounded-3xl overflow-hidden"
+              className="w-full max-w-[500px] h-full md:h-fit md:max-h-[90%] flex flex-col bg-white dark:bg-neutral-900 sm:rounded-3xl overflow-hidden relative"
             >
+              {/* Close Button */}
+              <button
+                className="absolute top-4 right-4 text-neutral-600 dark:text-neutral-300 text-2xl font-bold z-10"
+                onClick={() => setActive(null)}
+              >
+                &times;
+              </button>
+
               <motion.div layoutId={`image-${active.title}-${id}`}>
                 <Image
                   priority
@@ -271,7 +279,7 @@ const cards = [
   {
     description: "Google Data Analytics Professional Certificate 7",
     title: "Data Analysis with R Programming",
-    src: "/bloodborne.png",
+    src: "/da_7.png",
     alt: "R Programming Course Thumbnail",
     ctaText: "Play",
     ctaLink: "https://open.spotify.com/track/5aIZ2jtxZ4o4GHQXTybkIa?si=3219938308784553",
@@ -286,22 +294,22 @@ const cards = [
       </div>
     ),
   },
-  {
-    description: "Google Data Analytics Professional Certificate 8",
-    title: "Google Data Analytics Capstone",
-    src: "/bloodborne.png",
-    alt: "Capstone Course Thumbnail",
-    ctaText: "Play",
-    ctaLink: "https://open.spotify.com/track/5aIZ2jtxZ4o4GHQXTybkIa?si=3219938308784553",
-    chips: ["Data Analysis", "Spreadsheet", "SQL", "Data Visualization", "Data Cleansing"],
-    content: () => (
-      <div className="font-light text-md sm:text-md">
-        <ul>
-          <li>I applied practices and procedures for data analysis to real-world datasets.</li>
-        </ul>
-      </div>
-    ),
-  },
+  // {
+  //   description: "Google Data Analytics Professional Certificate 8",
+  //   title: "Google Data Analytics Capstone",
+  //   src: "/bloodborne.png",
+  //   alt: "Capstone Course Thumbnail",
+  //   ctaText: "Play",
+  //   ctaLink: "https://open.spotify.com/track/5aIZ2jtxZ4o4GHQXTybkIa?si=3219938308784553",
+  //   chips: ["Data Analysis", "Spreadsheet", "SQL", "Data Visualization", "Data Cleansing"],
+  //   content: () => (
+  //     <div className="font-light text-md sm:text-md">
+  //       <ul>
+  //         <li>I applied practices and procedures for data analysis to real-world datasets.</li>
+  //       </ul>
+  //     </div>
+  //   ),
+  // },
   {
     description: "SQL Certificate",
     title: "The Complete SQL Bootcamp: Go from Zero to Hero",
