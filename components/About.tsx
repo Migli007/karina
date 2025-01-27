@@ -71,7 +71,7 @@ const items = [
     {
       title: "My Education",
       description:
-        "I graduated from the University of Asia and the Pacific in August 2023 with a Bachelor of Science in Information Technology. (Photo credit: The Philippine Post, https://thepost.net.ph)",
+        "I graduated from the University of Asia and the Pacific last August 2023 with a Bachelor of Science in Information Technology. (Photo credit: The Philippine Post, https://thepost.net.ph)",
       header: (
         <img
           src="./uap.jpg" // Ensure you have permission to use and host this image locally
