@@ -14,9 +14,11 @@ import {
   IconAddressBook,
   IconAlignBoxBottomCenter,
   IconBriefcase2Filled,
-  IconBoxAlignBottomFilled
+  IconBoxAlignBottomFilled,
+  IconMailOpened
 } from "@tabler/icons-react";
 import { Case_study } from "@/components/Case";
+import Recom from "@/components/Recom";
 
 export default function Home() {
   return (
@@ -28,7 +30,8 @@ export default function Home() {
           {name: 'About Me',link:'#About', icon: <IconUserFilled />},
           {name: 'Certifications',link:'#certs', icon: <IconBookFilled />},
           {name: 'Experience',link:'#myexp', icon: <IconBriefcase2Filled />},
-          {name: 'Case Studies',link:'#myexp', icon: <IconBoxAlignBottomFilled />},
+          {name: 'Recommendations',link:'#recom', icon: <IconMailOpened />},
+          {name: 'Case Studies',link:'case', icon: <IconBoxAlignBottomFilled />},
           {name: 'Projects',link:'#proj', icon: <IconAlignBoxBottomCenter />},
           {name: 'Contacts',link:'#contact', icon: <IconAddressBook />},
         ]} />
@@ -51,6 +54,12 @@ export default function Home() {
         </div>
       </div>
       <Experience />
+      <div className="pt-10">
+          <div className="max-w-9xl w-full text-4xl text-white font-bold">
+            Recommendations
+        </div>
+      </div>
+      <Recom />
       <div className="pt-10">
           <div className="max-w-9xl w-full text-4xl text-white font-bold">
             My Case Study
