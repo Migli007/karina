@@ -15,6 +15,7 @@ import {
   IconAlignBoxBottomCenter,
   IconBriefcase2Filled
 } from "@tabler/icons-react";
+import { Case_study } from "@/components/Case";
 
 export default function Home() {
   return (
@@ -50,7 +51,13 @@ export default function Home() {
       <Experience />
       <div className="pt-10">
           <div className="max-w-9xl w-full text-4xl text-white font-bold">
-            My Projects
+            My Case Study
+        </div>
+      </div>
+      <Case_study />
+      <div className="pt-10">
+          <div className="max-w-9xl w-full text-4xl text-white font-bold">
+            My Other Projects
         </div>
       </div>
       {/* <Chip label="Chip Filled" className="bg-pink-500"/> */}

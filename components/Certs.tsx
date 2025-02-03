@@ -294,22 +294,38 @@ const cards = [
       </div>
     ),
   },
-  // {
-  //   description: "Google Data Analytics Professional Certificate 8",
-  //   title: "Google Data Analytics Capstone",
-  //   src: "/bloodborne.png",
-  //   alt: "Capstone Course Thumbnail",
-  //   ctaText: "Play",
-  //   ctaLink: "https://open.spotify.com/track/5aIZ2jtxZ4o4GHQXTybkIa?si=3219938308784553",
-  //   chips: ["Data Analysis", "Spreadsheet", "SQL", "Data Visualization", "Data Cleansing"],
-  //   content: () => (
-  //     <div className="font-light text-md sm:text-md">
-  //       <ul>
-  //         <li>I applied practices and procedures for data analysis to real-world datasets.</li>
-  //       </ul>
-  //     </div>
-  //   ),
-  // },
+  {
+    description: "Google Data Analytics Professional Certificate 8",
+    title: "Google Data Analytics Capstone",
+    src: "/da_8.png",
+    alt: "Capstone Course Thumbnail",
+    ctaText: "Play",
+    ctaLink: "https://open.spotify.com/track/5aIZ2jtxZ4o4GHQXTybkIa?si=3219938308784553",
+    chips: ["Data Analysis", "Spreadsheet", "SQL", "Data Visualization", "Data Cleansing"],
+    content: () => (
+      <div className="font-light text-md sm:text-md">
+        <ul>
+          <li>I applied practices and procedures for data analysis to real-world datasets.</li>
+        </ul>
+      </div>
+    ),
+  },
+  {
+    description: "Google Data Analytics Professional Certificate - Final",
+    title: "Google Data Analytics Completion",
+    src: "/da_complete.png",
+    alt: "Capstone Course Thumbnail",
+    ctaText: "Play",
+    ctaLink: "https://open.spotify.com/track/5aIZ2jtxZ4o4GHQXTybkIa?si=3219938308784553",
+    chips: ["Data Analysis", "Spreadsheet", "SQL", "Data Visualization", "Data Cleansing"],
+    content: () => (
+      <div className="font-light text-md sm:text-md">
+        <ul>
+          <li>I have completed all 8 courses under the certification of Google Data Analysis.</li>
+        </ul>
+      </div>
+    ),
+  },
   {
     description: "SQL Certificate",
     title: "The Complete SQL Bootcamp: Go from Zero to Hero",
