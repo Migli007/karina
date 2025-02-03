@@ -13,7 +13,8 @@ import {
   IconBookFilled,
   IconAddressBook,
   IconAlignBoxBottomCenter,
-  IconBriefcase2Filled
+  IconBriefcase2Filled,
+  IconBoxAlignBottomFilled
 } from "@tabler/icons-react";
 import { Case_study } from "@/components/Case";
 
@@ -27,6 +28,7 @@ export default function Home() {
           {name: 'About Me',link:'#About', icon: <IconUserFilled />},
           {name: 'Certifications',link:'#certs', icon: <IconBookFilled />},
           {name: 'Experience',link:'#myexp', icon: <IconBriefcase2Filled />},
+          {name: 'Case Studies',link:'#myexp', icon: <IconBoxAlignBottomFilled />},
           {name: 'Projects',link:'#proj', icon: <IconAlignBoxBottomCenter />},
           {name: 'Contacts',link:'#contact', icon: <IconAddressBook />},
         ]} />

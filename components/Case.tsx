@@ -3,7 +3,7 @@ import { HoverEffect } from "./ui/card-hover-effect";
  
 export function Case_study() {
   return (
-    <div id='proj' className="max-w-9xl pt-5 pb-20">
+    <div id='case' className="max-w-9xl pt-5 pb-20">
       <HoverEffect items={cases} />
     </div>
   );
