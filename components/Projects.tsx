@@ -1,4 +1,4 @@
-import { HoverEffect } from "./ui/card-hover-effect";
+import React from 'react'
 
  
 export function Myprojects() {
