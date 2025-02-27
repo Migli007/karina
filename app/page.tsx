@@ -71,8 +71,10 @@ export default function Home() {
             My Other Projects
         </div>
       </div>
+      <br /><br />
       {/* <Chip label="Chip Filled" className="bg-pink-500"/> */}
-      <Myprojects /> 
+      <Myprojects />
+      <br /><br/><br />
       <Footer />
     </main>
   );

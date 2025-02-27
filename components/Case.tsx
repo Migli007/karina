@@ -10,10 +10,24 @@ export function Case_study() {
 }
 export const cases = [
   {
-    title: "How does a bike-share navigate speedy success",
+    title: "Cyclistic Bike Share: Casual Riders vs. Annual Riders",
+    description:
+      "Analyzed bike ride data of casual and annual riders to identify trends in distance, duration, and preferences",
+    chips: ["Excel", "Python", "Pandas", "PostgreSQL"],
+    link: "bike_case_study"
+  },
+  {
+    title: "Bellabeat: Trends on Smartwatch Users ",
+    description:
+      "Examined smartwatch usage and health trends from Fitbit data of 33 users.  ",
+    chips: ["Excel", "Python","Pandas", "PostgreSQL","Tableau"],
+    link: "fitbit_case_study"
+  },
+  {
+    title: "Data Analysis on Hotel Yearly Performance",
     description:
       "Conducted an analysis of a bike-share company's data to provide insights and recommendations aimed at increasing sales.",
-    
-    chips: ["Excel", "Python", "PostgreSQL","R Studio"],
+    chips: ["Excel", "Python", "PostgreSQL","Pandas","Matplotlib"],
+    link: "hotel_case_study"
   },
 ];

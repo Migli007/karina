@@ -33,18 +33,25 @@ const Experience = () => {
 
 const workExperience = [
   {
+    title: "IT Consultant",
+    company: "ALX Services Co.",
+    year: "february 2025- Present",
+    description:
+      "Analyzed and documented internal system architecture to enhance performance and scalability. Presented data-driven insights to stakeholders, identifying opportunities for system enhancements and operational improvements."
+  },
+  {
     title: "IT Project Management Trainee",
     company: "Medicare Plus",
     year: "May 2023- September 2024",
     description:
-      "Collaborated with the team in terms of data mapping, cleaning data, and design of the backend of internal systems. Visualized data and present findings and insights to multiple stakeholders",
+      "Collaborated with the team on data mapping, data cleaning, and backend system design. Visualized data and presented findings to stakeholders, helping them track employee performance and manage funds effectively."
   },
   {
     title: "Junior Consultant",
     company: "CGI Group",
     year: "August 2022 - May 2023",
     description:
-      "Led identification, measurement, and improvement initiatives for data management. Implemented modifications to designs and features of internal projects. ",
+      "Led identification, measurement, and improvement initiatives for data management, improving process efficiency by 10%. Collaborated with the team and communicated with stakeholders in regards to data maangement and system design. "
   },
   {
     title: "Junior Automation Developer",

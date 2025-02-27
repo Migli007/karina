@@ -26,12 +26,13 @@ export const HoverEffect = ({
     >
       {items.map((item, idx) => (
         <a
-          key={item.title} // Use title as a unique key
-          href={item.link || "#"}
-          aria-label={`View details about ${item.title}`}
-          className="relative group block p-4 h-full" // Increased padding
-          onMouseEnter={() => setHoveredIndex(idx)}
-          onMouseLeave={() => setHoveredIndex(null)}
+        key={item.title} // Use title as a unique key
+        href={`/${item.link}.pdf`}  // Dynamically create the path with item.link
+        download={`${item.link}.pdf`}  // Download with a filename based on item.link
+        aria-label={`View details about ${item.title}`}
+        className="relative group block p-4 h-full" // Increased padding
+        onMouseEnter={() => setHoveredIndex(idx)}
+        onMouseLeave={() => setHoveredIndex(null)}
         >
           <AnimatePresence>
             {hoveredIndex === idx && (

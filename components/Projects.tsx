@@ -3,9 +3,35 @@ import { HoverEffect } from "./ui/card-hover-effect";
  
 export function Myprojects() {
   return (
-    <div id='proj' className="max-w-9xl pt-5 pb-20">
-      <HoverEffect items={projects} />
+    <div id="team">
+    <div className="w-full grid lg:grid-cols-3 grid-cols-1 gap-10">
+      {projects.map((card, idx) => (
+        <div key={idx} className="rounded-2xl border-green-300 p-[1px] overflow-hidden">
+          <div className="relative z-10 bg-gradient-to-r from-gray-800 to-gray-900 border border-white/50 p-8 rounded-2xl flex flex-col justify-end shadow-md hover:shadow-lg hover:scale-105 transition duration-300 ease-in-out min-h-[250px] flex-grow">
+            {/* Name */}
+            <h3 className="font-extrabold text-xl text-white tracking-wide relative z-20 whitespace-normal break-words">
+              {card.title}
+            </h3>
+  
+            {/* Description */}
+            <p className="mt-3 text-gray-400 relative z-20 flex items-center text-base">
+              {card.description}
+            </p>
+
+            <div className="flex flex-wrap gap-2 mt-4">
+            {card.chips.map((chip, index) => (
+              <span key={index} className="bg-green-500 text-white py-1 px-3 rounded-full text-sm">
+                {chip}
+              </span>
+            ))}
+          </div>
+          </div>
+      
+        </div>
+      ))}
     </div>
+  </div>
+  
   );
 }
 export const projects = [
