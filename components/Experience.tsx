@@ -58,7 +58,7 @@ const workExperience = [
     company: "CGI Group",
     year: "April 2022 - July 2022",
     description:
-      "Illustrated system designs for internal projects and created UI mock-ups for a company system. Contributed to the collaborative development of a CSR website. ",
+      "Designed and documented system architectures for internal projects, ensuring scalability and efficiency. Created detailed UI mock-ups to enhance user experience for a company system, incorporating feedback from stakeholders. ",
   },
 ];
 
