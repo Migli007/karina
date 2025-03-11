@@ -342,5 +342,21 @@ const cards = [
       </div>
     ),
   },
+  {
+    description: "Microsoft Power BI - 1",
+    title: "Preparing Data for Analysis with Microsoft Excel",
+    src: "/powerbi_1.png",
+    alt: "Power BI 1",
+    ctaText: "Play",
+    ctaLink: "https://open.spotify.com/track/5aIZ2jtxZ4o4GHQXTybkIa?si=3219938308784553",
+    chips: ["Data Analysis", "Spreadsheet", "Power BI"],
+    content: () => (
+      <div className="font-light text-md sm:text-md">
+        <ul>
+          <li>I learned and practiced the use of Excel sheet and data cleaning. </li>
+        </ul>
+      </div>
+    ),
+  },
 ];
 
