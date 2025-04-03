@@ -358,5 +358,53 @@ const cards = [
       </div>
     ),
   },
+  {
+    description: "Microsoft Power BI - 2",
+    title: "Harnessing the Power of Data with Power BI",
+    src: "/powerbi_2.png",
+    alt: "Power BI 2",
+    ctaText: "Play",
+    ctaLink: "https://open.spotify.com/track/5aIZ2jtxZ4o4GHQXTybkIa?si=3219938308784553",
+    chips: ["Data Analysis", "Spreadsheet", "Power BI"],
+    content: () => (
+      <div className="font-light text-md sm:text-md">
+        <ul>
+          <li>I learned and reviewed the basics of Power BI </li>
+        </ul>
+      </div>
+    ),
+  },
+  {
+    description: "Microsoft Power BI - 3",
+    title: "Extract, Transform, and Load Data in POWER BI",
+    src: "/powerbi_3.png",
+    alt: "Power BI 3",
+    ctaText: "Play",
+    ctaLink: "https://open.spotify.com/track/5aIZ2jtxZ4o4GHQXTybkIa?si=3219938308784553",
+    chips: ["Data Analysis", "Spreadsheet", "Power BI", "ETL", "DAX"],
+    content: () => (
+      <div className="font-light text-md sm:text-md">
+        <ul>
+          <li>Reviwed the uses of DAX functionalities and ETL capabilities </li>
+        </ul>
+      </div>
+    ),
+  },
+  {
+    description: "Microsoft Power BI - 4",
+    title: "Data Modeling in POWER BI",
+    src: "/powerbi_3.png",
+    alt: "Power BI 3",
+    ctaText: "Play",
+    ctaLink: "https://open.spotify.com/track/5aIZ2jtxZ4o4GHQXTybkIa?si=3219938308784553",
+    chips: ["Data Analysis", "Spreadsheet", "Power BI", "ETL", "DAX"],
+    content: () => (
+      <div className="font-light text-md sm:text-md">
+        <ul>
+          <li>Learned advanced DAX skills and other functions for data modeling in Power BI </li>
+        </ul>
+      </div>
+    ),
+  },
 ];
 
