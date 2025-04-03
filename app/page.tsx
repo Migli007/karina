@@ -20,6 +20,7 @@ import {
 import { Case_study } from "@/components/Case";
 import Recom from "@/components/Recom";
 
+
 export default function Home() {
   return (
    
@@ -62,7 +63,7 @@ export default function Home() {
       <Recom />
       <div className="pt-10">
           <div className="max-w-9xl w-full text-4xl text-white font-bold">
-            My Case Study
+            My Case Studies and Dashboards
         </div>
       </div>
       <Case_study />
@@ -74,6 +75,7 @@ export default function Home() {
       <br /><br />
       {/* <Chip label="Chip Filled" className="bg-pink-500"/> */}
       <Myprojects />
+   
       <br /><br/><br />
       <Footer />
     </main>

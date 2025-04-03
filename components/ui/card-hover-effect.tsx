@@ -2,7 +2,7 @@
 import clsx from "clsx"; // Use clsx instead of cn
 import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
-
+import Image from "next/image";
 export const HoverEffect = ({
   items,
   className,
@@ -12,6 +12,7 @@ export const HoverEffect = ({
     description: string;
     link?: string;
     chips?: string[];
+    image?: string;
   }[];
   className?: string;
 }) => {
@@ -20,15 +21,15 @@ export const HoverEffect = ({
   return (
     <div
       className={clsx(
-        "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8", // Increased gap between cards
+        "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8", // Increased gap between cards
         className
       )}
     >
       {items.map((item, idx) => (
         <a
         key={item.title} // Use title as a unique key
-        href={`/${item.link}.pdf`}  // Dynamically create the path with item.link
-        download={`${item.link}.pdf`}  // Download with a filename based on item.link
+        href={item.link}  // Dynamically create the path with item.link
+        // download={`${item.link}.pdf`}  // Download with a filename based on item.link
         aria-label={`View details about ${item.title}`}
         className="relative group block p-4 h-full" // Increased padding
         onMouseEnter={() => setHoveredIndex(idx)}
@@ -52,6 +53,11 @@ export const HoverEffect = ({
             )}
           </AnimatePresence>
           <Card>
+            <Image src={item.image ?? '/dashbo.png'} 
+              width={300}
+              height={300}
+              className="w-full h-auto max-h-[300px] object-cover"
+              alt="linear board demo"/>
             <CardTitle>{item.title}</CardTitle>
             <CardDescription>{item.description}</CardDescription>
             {item.chips && (
