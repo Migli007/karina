@@ -15,7 +15,7 @@ const Hero = () => {
             Miguel Antonio Li
           </h1>
           <p className="text-center mt-2 text-neutral-300 relative z-20">
-            Professional Data Analyst
+          Data Analyst | Data Science | Business Intelligence | Python | SQL | Power BI | Reporting Specialist
           </p>
         </div>
       </div>
