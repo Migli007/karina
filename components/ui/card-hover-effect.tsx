@@ -53,26 +53,38 @@ export const HoverEffect = ({
             )}
           </AnimatePresence>
           <Card>
-            <Image src={item.image ?? '/dashbo.png'} 
-              width={300}
-              height={300}
-              className="w-full h-auto max-h-[300px] object-cover"
-              alt="linear board demo"/>
+          <Image
+            src={item.image ?? '/dashbo.png'}
+            width={300}
+            height={300}
+            className="w-full h-auto max-h-[300px] object-cover"
+            alt="linear board demo"
+          />
+
+          {/* Title and Button Row */}
+          <div className="flex justify-between items-center mt-4">
             <CardTitle>{item.title}</CardTitle>
-            <CardDescription>{item.description}</CardDescription>
-            {item.chips && (
-              <div className="flex flex-wrap gap-2 mt-4">
-                {item.chips.map((chip, chipIdx) => (
-                  <span
-                    key={chipIdx}
-                    className="px-3 py-1 text-xs font-medium bg-zinc-200 text-zinc-700 rounded-full dark:bg-blue-900 dark:text-white"
-                  >
-                    {chip}
-                  </span>
-                ))}
-              </div>
-            )}
-          </Card>
+            <button className="shadow-[0_0_0_3px_#000000_inset] px-6 py-2 bg-transparent border border-black dark:border-white dark:text-white text-black rounded-lg font-bold transform hover:-translate-y-1 transition duration-400">
+              See Project
+            </button>
+          </div>
+
+          <CardDescription>{item.description}</CardDescription>
+
+          {item.chips && (
+            <div className="flex flex-wrap gap-2 mt-4">
+              {item.chips.map((chip, chipIdx) => (
+                <span
+                  key={chipIdx}
+                  className="px-3 py-1 text-xs font-medium bg-zinc-200 text-zinc-700 rounded-full dark:bg-blue-900 dark:text-white"
+                >
+                  {chip}
+                </span>
+              ))}
+            </div>
+          )}
+        </Card>
+
         </a>
       ))}
     </div>
